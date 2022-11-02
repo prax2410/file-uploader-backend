@@ -15,15 +15,4 @@ router.get('/', (req, res) => {
     }
 });
 
-// router.param("/:fName", (req, res, next, fname) => {
-//     try {
-//         const file = `../file-uploader-backend/uploadedFiles/${fname}`;
-//         console.log(file);
-//         res.download(file);
-//         console.log('here');
-//     } catch (err) {
-//         console.log(err);
-//     }
-// });
-
 module.exports = router;

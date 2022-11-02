@@ -1,14 +1,11 @@
 const express = require('express');
 const cors = require('cors');
 const multer = require('multer')
-const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 require('dotenv').config();
 
 // import routes
-const googleSignInRoute = require('./routes/googleRoutes');
-const database = require('./routes/database');
 const dataHandlerRoute = require('./routes/dataHandler');
 const downloadRoute = require('./routes/download');
 
@@ -41,13 +38,10 @@ app.post('/upload', (req, res) => {
 app.use(cors({
     origin: '*'
 }));
-app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(cookieParser());
 
 // routes middleware
-app.use('/', googleSignInRoute);
-app.use('/database', database);
 app.use('/getFileNames', dataHandlerRoute);
 app.use('/download', downloadRoute);
 
