@@ -4,6 +4,7 @@ const router = express.Router();
 // download file
 router.get('/', (req, res) => {
     let file_name = req.query.filename;
+    // let file_name = "1.png";
     console.log(req.query);
     try {
         const file = `../file-uploader-backend/uploadedFiles/${file_name}`;

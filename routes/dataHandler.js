@@ -10,12 +10,8 @@ router.get('/', (req, res) => {
         if (err) {
             return console.log("Error")
         }
-
         return res.status(200).json(files);
     });
-    
 });
-
-
 
 module.exports = router;

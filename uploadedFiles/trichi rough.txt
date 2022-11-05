@@ -1,0 +1,6 @@
+// db
+
+SELECT * FROM autoclave_table
+ORDER BY id DESC;
+
+SELECT * FROM furnace_table;

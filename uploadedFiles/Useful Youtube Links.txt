@@ -1,0 +1,14 @@
+Youtube : Codevolution
+
+1. Practical React - 10 - Date Picker 
+2. Practical React - 14 - Charts
+
+react-select
+https://codesandbox.io/s/react-select-css-styling-chy20?file=/src/index.js
+
+time-picker
+https://www.youtube.com/watch?v=97lSkxy7Wjk
+https://stackoverflow.com/questions/53544872/how-to-style-the-input-type-time
+
+date-picker
+https://stackoverflow.com/questions/14946091/are-there-any-style-options-for-the-html5-date-picker
